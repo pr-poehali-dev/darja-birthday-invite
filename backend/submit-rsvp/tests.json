@@ -1,0 +1,51 @@
+{
+  "tests": [
+    {
+      "name": "Submit RSVP with full data",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Петров",
+        "email": "ivan@example.com",
+        "phone": "+7 (999) 123-45-67",
+        "willAttend": "yes",
+        "drinkPreference": "champagne",
+        "additionalInfo": "Вегетарианское меню"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "message": "RSVP saved successfully"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Submit RSVP with minimal data",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Мария Иванова",
+        "willAttend": "no"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Reject empty name",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "",
+        "willAttend": "yes"
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
