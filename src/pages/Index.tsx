@@ -79,6 +79,19 @@ const Index = () => {
       
       <div className="max-w-4xl mx-auto px-4 py-16 relative z-10">
         <section className="text-center mb-20 animate-fade-in">
+          <div className="mb-12 relative flex justify-center">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl shadow-amber-500/50">
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Дарья" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          
           <div className="mb-8 relative">
             <div className="inline-block p-10 border-2 border-amber-400 bg-gradient-to-br from-slate-800 to-black shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 shimmer"></div>
