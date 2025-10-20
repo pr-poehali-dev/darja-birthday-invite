@@ -69,22 +69,24 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-900 text-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-transparent to-amber-900/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-700/20 via-transparent to-slate-700/20"></div>
       <div className="absolute top-0 left-0 w-full h-96 bg-cover bg-center opacity-20" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/1fd0b9ad-d190-4486-ab3f-33c1d1456cae/files/c08754bc-ad96-4469-8449-51371d72589c.jpg)' }}></div>
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-amber-400/30 to-yellow-600/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-60 right-20 w-40 h-40 bg-gradient-to-br from-yellow-300/20 to-amber-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-40 left-1/4 w-36 h-36 bg-gradient-to-br from-amber-500/25 to-yellow-400/25 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
-      </div>
+      
+      <div className="balloon w-16 h-20 bg-gradient-to-br from-gray-300 to-gray-400 shadow-lg" style={{ left: '10%', animationDelay: '0s', filter: 'drop-shadow(0 0 10px rgba(192,192,192,0.5))' }}></div>
+      <div className="balloon w-12 h-16 bg-gradient-to-br from-yellow-300 to-amber-400 shadow-lg" style={{ left: '25%', animationDelay: '3s', filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.5))' }}></div>
+      <div className="balloon w-14 h-18 bg-gradient-to-br from-gray-200 to-gray-300 shadow-lg" style={{ left: '40%', animationDelay: '6s', filter: 'drop-shadow(0 0 10px rgba(192,192,192,0.5))' }}></div>
+      <div className="balloon w-16 h-20 bg-gradient-to-br from-amber-300 to-yellow-500 shadow-lg" style={{ left: '55%', animationDelay: '9s', filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.5))' }}></div>
+      <div className="balloon w-12 h-16 bg-gradient-to-br from-gray-300 to-gray-400 shadow-lg" style={{ left: '70%', animationDelay: '12s', filter: 'drop-shadow(0 0 10px rgba(192,192,192,0.5))' }}></div>
+      <div className="balloon w-14 h-18 bg-gradient-to-br from-yellow-300 to-amber-400 shadow-lg" style={{ left: '85%', animationDelay: '2s', filter: 'drop-shadow(0 0 10px rgba(212,175,55,0.5))' }}></div>
       
       <div className="max-w-4xl mx-auto px-4 py-16 relative z-10">
         <section className="text-center mb-20 animate-fade-in">
           <div className="mb-12 relative flex justify-center">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000"></div>
-              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-amber-400 shadow-2xl shadow-amber-500/50">
+              <div className="absolute -inset-1 bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+              <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-gray-300 shadow-2xl shadow-gray-500/50">
                 <img 
-                  src="/placeholder.svg" 
+                  src="https://cdn.poehali.dev/files/07e3e3b8-6fd1-423c-bddc-4b66d96f4d37.jpg" 
                   alt="Дарья" 
                   className="w-full h-full object-cover"
                 />
@@ -93,55 +95,55 @@ const Index = () => {
           </div>
           
           <div className="mb-8 relative">
-            <div className="inline-block p-10 border-2 border-amber-400 bg-gradient-to-br from-slate-800 to-black shadow-2xl relative overflow-hidden">
+            <div className="inline-block p-10 border-2 border-gray-300 bg-gradient-to-br from-slate-800 to-black shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 shimmer"></div>
-              <h1 className="text-7xl md:text-8xl font-light mb-4 gold-text relative z-10">25</h1>
+              <h1 className="text-7xl md:text-8xl font-light mb-4 silver-text relative z-10">25</h1>
             </div>
           </div>
-          <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-wide gold-text">Дарья</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl font-light tracking-widest text-amber-100">
+          <h2 className="text-5xl md:text-6xl font-light mb-6 tracking-wide silver-text">Дарья</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent mx-auto mb-6"></div>
+          <p className="text-xl md:text-2xl font-light tracking-widest text-gray-100">
             ПРИГЛАШАЕТ ВАС НА ДЕНЬ РОЖДЕНИЯ
           </p>
-          <div className="mt-6 text-amber-300 text-sm tracking-wider">✦ ✦ ✦</div>
+          <div className="mt-6 text-gray-300 text-sm tracking-wider">✦ ✦ ✦</div>
         </section>
 
         <section className="mb-20 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center p-8 border-2 border-amber-400/50 bg-gradient-to-br from-slate-800/90 to-black/90 backdrop-blur-sm transition-all duration-300 shadow-xl shadow-amber-900/20 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 hover:border-amber-400 relative group">
-              <Icon name="Calendar" className="mx-auto mb-4 text-amber-400" size={32} />
-              <h3 className="text-2xl font-light mb-3 text-amber-100">Дата и Время</h3>
+            <div className="text-center p-8 border-2 border-gray-300/50 bg-gradient-to-br from-slate-800/90 to-black/90 backdrop-blur-sm transition-all duration-300 shadow-xl shadow-gray-700/20 hover:shadow-2xl hover:shadow-gray-400/30 hover:scale-105 hover:border-gray-300 relative group">
+              <Icon name="Calendar" className="mx-auto mb-4 text-gray-300" size={32} />
+              <h3 className="text-2xl font-light mb-3 text-gray-100">Дата и Время</h3>
               <p className="text-lg text-white">15 декабря 2024</p>
               <p className="text-lg text-white">19:00</p>
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
 
-            <div className="text-center p-8 border-2 border-amber-400/50 bg-gradient-to-br from-slate-800/90 to-black/90 backdrop-blur-sm transition-all duration-300 shadow-xl shadow-amber-900/20 hover:shadow-2xl hover:shadow-amber-500/30 hover:scale-105 hover:border-amber-400 relative group">
-              <Icon name="MapPin" className="mx-auto mb-4 text-amber-400" size={32} />
-              <h3 className="text-2xl font-light mb-3 text-amber-100">Место</h3>
+            <div className="text-center p-8 border-2 border-gray-300/50 bg-gradient-to-br from-slate-800/90 to-black/90 backdrop-blur-sm transition-all duration-300 shadow-xl shadow-gray-700/20 hover:shadow-2xl hover:shadow-gray-400/30 hover:scale-105 hover:border-gray-300 relative group">
+              <Icon name="MapPin" className="mx-auto mb-4 text-gray-300" size={32} />
+              <h3 className="text-2xl font-light mb-3 text-gray-100">Место</h3>
               <p className="text-lg text-white">Ресторан "Белая Гавань"</p>
               <p className="text-lg text-white">ул. Пушкина, 25</p>
-              <div className="absolute inset-0 bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
           </div>
         </section>
 
         <section className="mb-20 text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <div className="inline-block p-12 border-2 border-amber-400 bg-gradient-to-br from-slate-900 to-black shadow-2xl shadow-amber-900/50 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-amber-400/5 to-transparent"></div>
-            <Icon name="Shirt" className="mx-auto mb-4 text-amber-400 relative z-10" size={48} />
-            <h3 className="text-3xl font-light mb-4 gold-text relative z-10">Дресс-код</h3>
+          <div className="inline-block p-12 border-2 border-gray-300 bg-gradient-to-br from-slate-900 to-black shadow-2xl shadow-gray-700/50 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-300/5 to-transparent"></div>
+            <Icon name="Shirt" className="mx-auto mb-4 text-gray-300 relative z-10" size={48} />
+            <h3 className="text-3xl font-light mb-4 silver-text relative z-10">Дресс-код</h3>
             <p className="text-xl font-light tracking-wider text-white relative z-10">ЧЕРНОЕ & БЕЛОЕ</p>
-            <p className="text-lg mt-4 text-amber-100 relative z-10">Коктейльный стиль</p>
-            <div className="mt-6 text-amber-400 text-2xl relative z-10">✦</div>
+            <p className="text-lg mt-4 text-gray-100 relative z-10">Коктейльный стиль</p>
+            <div className="mt-6 text-gray-300 text-2xl relative z-10">✦</div>
           </div>
         </section>
 
         <section className="animate-fade-in relative" style={{ animationDelay: '0.6s' }}>
-          <div className="max-w-2xl mx-auto bg-gradient-to-br from-slate-900 to-black text-white p-8 md:p-12 shadow-2xl shadow-amber-900/30 border-2 border-amber-400/50 relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-amber-500/5 to-transparent"></div>
-            <h3 className="text-3xl font-light text-center mb-8 gold-text relative z-10">Подтверждение присутствия</h3>
+          <div className="max-w-2xl mx-auto bg-gradient-to-br from-slate-900 to-black text-white p-8 md:p-12 shadow-2xl shadow-gray-700/30 border-2 border-gray-300/50 relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-400/5 to-transparent"></div>
+            <h3 className="text-3xl font-light text-center mb-8 silver-text relative z-10">Подтверждение присутствия</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -237,7 +239,7 @@ const Index = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full gold-gradient text-black hover:opacity-90 font-light tracking-wider text-lg py-6 shadow-lg shadow-amber-500/50 transition-all hover:shadow-amber-500/70 relative z-10"
+                className="w-full silver-gradient text-black hover:opacity-90 font-light tracking-wider text-lg py-6 shadow-lg shadow-gray-400/50 transition-all hover:shadow-gray-400/70 relative z-10"
               >
                 {isSubmitting ? 'Отправка...' : 'ОТПРАВИТЬ'}
               </Button>
@@ -246,9 +248,9 @@ const Index = () => {
         </section>
 
         <footer className="text-center mt-20 pb-8">
-          <div className="text-amber-300 text-xs tracking-wider mb-3">✦ ✦ ✦</div>
-          <p className="text-sm font-light tracking-widest text-amber-100">С НЕТЕРПЕНИЕМ ЖДУ ВАС</p>
-          <div className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-4"></div>
+          <div className="text-gray-300 text-xs tracking-wider mb-3">✦ ✦ ✦</div>
+          <p className="text-sm font-light tracking-widest text-gray-100">С НЕТЕРПЕНИЕМ ЖДУ ВАС</p>
+          <div className="w-12 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mx-auto mt-4"></div>
         </footer>
       </div>
     </div>

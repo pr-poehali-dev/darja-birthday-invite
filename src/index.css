@@ -124,12 +124,23 @@
     background-clip: text;
   }
 
+  .silver-gradient {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 50%, #c0c0c0 100%);
+  }
+
+  .silver-text {
+    background: linear-gradient(135deg, #c0c0c0 0%, #f5f5f5 50%, #c0c0c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .shimmer {
     animation: shimmer 3s infinite linear;
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(212, 175, 55, 0.5),
+      rgba(192, 192, 192, 0.5),
       transparent
     );
     background-size: 200% 100%;
@@ -165,6 +176,29 @@
     50% {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  .balloon {
+    position: absolute;
+    border-radius: 50%;
+    animation: float-up 15s ease-in infinite;
+  }
+
+  @keyframes float-up {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+      opacity: 0;
     }
   }
 }
